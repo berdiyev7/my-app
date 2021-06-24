@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const InfoSec = styled.div`
    color: #fff;
-   padding: 160px 0;
+   padding: 210px 0;
    background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
 `;
 
@@ -59,4 +59,19 @@ export const Subtitle = styled.p`
    font-size: 18px;
    line-height: 24px;
    color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+`;
+
+export const ImgWrapper = styled.div`
+   max-width: 555px;
+   display: flex;
+   justify-content: ${({ start }) => (start ? 'fllex-start' : 'flex-end')};
+`;
+
+export const Img = styled.img`
+   padding-right: 0;
+   border: 0;
+   max-width: 100%;
+   vertical-align: middle;
+   display: inline-block;
+   max-height: 500px;
 `;
